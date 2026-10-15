@@ -76,7 +76,7 @@ img {
   width: min(100%, 1120px);
   height: clamp(280px, 42vw, 480px);
   transform: translateX(-50%);
-  background-image: url("./assets/loki-cinematic.jpg");
+  background-image: url("./loki-cinematic.jpg");
   background-position: center clamp(-90px, -8vw, -56px);
   background-size: clamp(720px, 100vw, 1120px) auto;
   background-repeat: no-repeat;
