@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Тарифы клуба путешественников «Выше» и отзывы участников." />
+    <title>Выше — тарифы и отзывы</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Montserrat для заголовков, Inter для основного текста. -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Montserrat:wght@600;700&amp;display=swap"
+    />
+
+    <!-- Стили Swiper подключаются перед собственным style.css. -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Общая обёртка: фон и затемнение заданы для .page в style.css. -->
+    <div class="page">
+      <main>
+        <section class="pricing" aria-labelledby="pricing-title">
+          <div class="container">
+            <header class="section-header">
+              <p class="section-label">ТАРИФЫ</p>
+              <h2 id="pricing-title">Выберите свой путь к приключениям</h2>
+              <p class="section-subtitle">
+                Найдите подходящий тариф и начните открывать новые места вместе с нами.
+              </p>
+            </header>
+
+            <div class="pricing-cards">
+              <div class="pricing-card" data-aos="fade-up">
+                <article class="card" aria-labelledby="basic-title">
+                  <h3 class="card__title" id="basic-title">Базовый</h3>
+                  <p class="card__description">Для тех, кто делает первые шаги в путешествиях.</p>
+                  <p class="card__price">$29 <span>/мес</span></p>
+                  <ul class="card__features">
+                    <li>Подборки маршрутов для начинающих</li>
+                    <li>Советы по подготовке к походу</li>
+                    <li>Доступ к сообществу путешественников</li>
+                    <li>Ежемесячная рассылка с идеями поездок</li>
+                  </ul>
+                  <button class="card__button" type="button" aria-label="Выбрать тариф Базовый">
+                    Выбрать тариф
+                  </button>
+                </article>
+              </div>
+
+              <div class="pricing-card pricing-card--popular" data-aos="fade-up" data-aos-delay="100">
+                <article class="card card--popular" aria-labelledby="standard-title">
+                  <h3 class="card__title" id="standard-title">Стандарт</h3>
+                  <p class="card__description">Для тех, кто хочет путешествовать чаще и увереннее.</p>
+                  <p class="card__price">$59 <span>/мес</span></p>
+                  <ul class="card__features">
+                    <li>Все преимущества тарифа «Базовый»</li>
+                    <li>Полная библиотека маршрутов</li>
+                    <li>Встречи с опытными путешественниками</li>
+                    <li>Скидки на групповые походы</li>
+                  </ul>
+                  <button class="card__button" type="button" aria-label="Выбрать тариф Стандарт">
+                    Выбрать тариф
+                  </button>
+                </article>
+              </div>
+
+              <div class="pricing-card" data-aos="fade-up" data-aos-delay="200">
+                <article class="card" aria-labelledby="premium-title">
+                  <h3 class="card__title" id="premium-title">Премиум</h3>
+                  <p class="card__description">Для тех, кто мечтает о путешествии по собственному маршруту.</p>
+                  <p class="card__price">$99 <span>/мес</span></p>
+                  <ul class="card__features">
+                    <li>Все преимущества тарифа «Стандарт»</li>
+                    <li>Индивидуальная консультация гида</li>
+                    <li>Помощь в составлении личного маршрута</li>
+                    <li>Приоритетная запись в экспедиции</li>
+                  </ul>
+                  <button class="card__button" type="button" aria-label="Выбрать тариф Премиум">
+                    Выбрать тариф
+                  </button>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="reviews" aria-labelledby="reviews-title">
+          <div class="container">
+            <header class="section-header">
+              <p class="section-label">ОТЗЫВЫ</p>
+              <h2 id="reviews-title">Истории наших путешественников</h2>
+              <p class="section-subtitle">
+                Впечатления людей, которые уже открыли для себя новые горизонты.
+              </p>
+            </header>
+
+            <div class="reviews-carousel">
+              <div class="swiper reviews-slider" id="reviews-slider">
+                <div class="swiper-wrapper">
+                  <article class="swiper-slide" aria-label="Отзыв Наташи Романофф">
+                    <div class="review-author">
+                      <img
+                        class="review-author__avatar"
+                        src="./assets/avatars/black-widow-mcu.jpg"
+                        alt="Наташа Романофф — Чёрная вдова"
+                        width="80"
+                        height="80"
+                      />
+                      <h3 class="review-author__name">Наташа Романофф</h3>
+                      <p class="review-author__position">Чёрная вдова</p>
+                      <p class="review-author__rating">
+                        <span role="img" aria-label="Оценка: 5 из 5">★★★★★</span>
+                      </p>
+                    </div>
+                    <blockquote class="review-quote">
+                      <span class="review-quote__icon" aria-hidden="true">“</span>
+                      <p>Маршрут проверила. Гида тоже. Всё чисто. Редкий случай, когда
+                        могу просто наслаждаться видом, а не искать подвох.
+                        Хотя пути отхода я всё равно запомнила.</p>
+                    </blockquote>
+                  </article>
+
+                  <article class="swiper-slide" aria-label="Отзыв Тони Старка">
+                    <div class="review-author">
+                      <img
+                        class="review-author__avatar"
+                        src="./assets/avatars/tony-stark-mcu.jpg"
+                        alt="Тони Старк без шлема"
+                        width="80"
+                        height="80"
+                        loading="lazy"
+                      />
+                      <h3 class="review-author__name">Тони Старк</h3>
+                      <p class="review-author__position">Железный человек</p>
+                      <p class="review-author__rating">
+                        <span role="img" aria-label="Оценка: 5 из 5">★★★★★</span>
+                      </p>
+                    </div>
+                    <blockquote class="review-quote">
+                      <span class="review-quote__icon" aria-hidden="true">“</span>
+                      <p>Мог бы долететь до вершины за сорок секунд. Но гид настоял
+                        на прогулке. Признаю: виды стоят усилий. Пятница, продли подписку.
+                        И добавь кофемашину в список снаряжения.</p>
+                    </blockquote>
+                  </article>
+
+                  <article class="swiper-slide" aria-label="Отзыв Тора">
+                    <div class="review-author">
+                      <img
+                        class="review-author__avatar"
+                        src="./assets/avatars/thor-mcu.jpg"
+                        alt="Тор"
+                        width="80"
+                        height="80"
+                        loading="lazy"
+                      />
+                      <h3 class="review-author__name">Тор</h3>
+                      <p class="review-author__position">Бог грома</p>
+                      <p class="review-author__rating">
+                        <span role="img" aria-label="Оценка: 5 из 5">★★★★★</span>
+                      </p>
+                    </div>
+                    <blockquote class="review-quote">
+                      <span class="review-quote__icon" aria-hidden="true">“</span>
+                      <p>Достойный поход! Вершины Мидгарда почти не уступают Асгарду.
+                        Гроза была моей — хотел сделать привал торжественнее.
+                        Палатку починю. А теперь несите ещё этого вашего чая!</p>
+                    </blockquote>
+                  </article>
+
+                  <article class="swiper-slide" aria-label="Отзыв Стива Роджерса">
+                    <div class="review-author">
+                      <img
+                        class="review-author__avatar"
+                        src="./assets/avatars/captain-america-mcu.jpg"
+                        alt="Стив Роджерс — Капитан Америка"
+                        width="80"
+                        height="80"
+                        loading="lazy"
+                      />
+                      <h3 class="review-author__name">Стив Роджерс</h3>
+                      <p class="review-author__position">Капитан Америка</p>
+                      <p class="review-author__rating">
+                        <span role="img" aria-label="Оценка: 5 из 5">★★★★★</span>
+                      </p>
+                    </div>
+                    <blockquote class="review-quote">
+                      <span class="review-quote__icon" aria-hidden="true">“</span>
+                      <p>Маршрут отличный, команда ещё лучше. На подъёме помогли новичкам,
+                        на спуске — друг другу. Единственная просьба: маршруты по ледникам
+                        пока не предлагать. У меня с ними история.</p>
+                    </blockquote>
+                  </article>
+
+                  <article class="swiper-slide" aria-label="Отзыв Ванды Максимофф">
+                    <div class="review-author">
+                      <img
+                        class="review-author__avatar"
+                        src="./assets/avatars/scarlet-witch-mcu.jpg"
+                        alt="Алая Ведьма — Ванда Максимофф"
+                        width="80"
+                        height="80"
+                        loading="lazy"
+                      />
+                      <h3 class="review-author__name">Ванда Максимофф</h3>
+                      <p class="review-author__position">Алая Ведьма</p>
+                      <p class="review-author__rating">
+                        <span role="img" aria-label="Оценка: 5 из 5">★★★★★</span>
+                      </p>
+                    </div>
+                    <blockquote class="review-quote">
+                      <span class="review-quote__icon" aria-hidden="true">“</span>
+                      <p>Здесь так спокойно, что я впервые за долгое время ничего
+                        не меняла в реальности. Только сделала закат чуть более алым.
+                        Пять звёзд. Шестую могу наколдовать.</p>
+                    </blockquote>
+                  </article>
+                </div>
+              </div>
+
+              <!-- Стрелки и контейнер точек — снаружи .swiper. -->
+              <div class="reviews-navigation" role="group" aria-label="Навигация по отзывам">
+                <button class="reviews-arrow reviews-prev" type="button" aria-label="Предыдущий отзыв" aria-controls="reviews-slider">
+                  <span aria-hidden="true">←</span>
+                </button>
+                <button class="reviews-arrow reviews-next" type="button" aria-label="Следующий отзыв" aria-controls="reviews-slider">
+                  <span aria-hidden="true">→</span>
+                </button>
+              </div>
+              <!-- При запуске Swiper создаст здесь пять точек пагинации. -->
+              <div class="reviews-pagination" role="group" aria-label="Выбрать отзыв"></div>
+            </div>
+
+            <p class="slider-message" role="status" hidden>
+              Не удалось загрузить слайдер. Проверьте подключение к интернету и обновите страницу.
+            </p>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <!-- Библиотеки загружаются перед script.js, defer сохраняет порядок. -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" defer></script>
+    <script src="./script.js" defer></script>
+  </body>
+</html>
